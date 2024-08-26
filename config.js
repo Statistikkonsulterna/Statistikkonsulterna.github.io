@@ -67,7 +67,7 @@ var CONFIG = {
     "scaleType": "linear",
     "syncModels": [],
     "use": "indicator",
-    // "which": "Förädlingsvärde, mnkr",
+    "which": "Förädlingsvärde, mnkr",
     "zoomedMax": null,
     "zoomedMin": null
    },
@@ -92,7 +92,7 @@ var CONFIG = {
     "scaleType": "linear",
     "syncModels": [],
     "use": "indicator",
-    // "which": "Produktionsvärde, mnkr",
+    "which": "Produktionsvärde, mnkr",
     "zoomedMax": null,
     "zoomedMin": null
    },
@@ -165,7 +165,7 @@ var CONFIG = {
     "scaleType": "linear",
     "syncModels": [],
     "use": "indicator",
-    // "which": "Förvärvsarbetande kvinnor, antal",
+    "which": "Förvärvsarbetande kvinnor, antal",
     "zoomedMax": null,
     "zoomedMin": null
    },
