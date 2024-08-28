@@ -352,7 +352,7 @@ var CONFIG = {
  "chartType": "BubbleChart"
 };
 
-function openCity(evt, cityName) {
+function openCity(event, cityName) {
   // Declare all variables
   var i, tabcontent, tablinks;
 
@@ -370,5 +370,5 @@ function openCity(evt, cityName) {
 
   // Show the current tab, and add an "active" class to the button that opened the tab
   document.getElementById(cityName).style.display = "block";
-  evt.currentTarget.className += " active";
+  event.currentTarget.className += " active";
 }
