@@ -112,7 +112,7 @@ var CONFIG = {
     "autoconfig": {},
     "data": "data",
     "palette": {
-     "_default": "#ffb600"
+     "_default": "#4f6366"
     },
     "paletteHiddenKeys": [],
     "paletteLabels": null,
