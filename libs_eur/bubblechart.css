@@ -30,13 +30,13 @@
     background-color: #ccc;
   }
   
-  /* Style the tab content */
-  .tabcontent {
+ /* Style the tab content */
+.tabcontent {
     display: none;
-    padding: 30px;
+    padding: 2%;
     border: 1px solid #ccc;
     border-top: none;
-    height: 100vh;
-    width: 100vh;
+    height: 80vh;
+    width: 100%;
     overflow-y: auto;
   }
