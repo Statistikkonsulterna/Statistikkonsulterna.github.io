@@ -3,7 +3,7 @@
 /*# sourceMappingURL=bubblechart.css.map*/
 
 
-/* Style the tab */
+/* Style the tab 
 .tab {
     overflow: hidden;
     border: 1% solid #ccc;
@@ -13,6 +13,13 @@
       border-radius: 10px;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
       height: 100%;
+  }*/
+
+  .tab {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto; 
   }
 
 /* Style the buttons that are used to open the tab content */
@@ -37,11 +44,17 @@
     background-color: #ccc;
   }
 
-  /* Style the tab content */
+  /* Style the tab content 
 .tabcontent {
     display: none;
     padding: 2%;
     border: 1px solid #ccc;
       height: 100%;
       overflow-y: auto;
+  } */
+
+  .tabcontent {
+  max-width: 100%;          
+    padding: 20px;            
+    box-sizing: border-box; 
   }
