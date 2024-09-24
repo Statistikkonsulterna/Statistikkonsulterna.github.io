@@ -306,11 +306,11 @@ var CONFIG = {
     "showProjectionLineY": true
    }
   },
-  "cursorMode": "arrow",
-  "datawarning": {
-   "doubtDomain": [],
-   "doubtRange": []
-  },
+  // "cursorMode": "arrow",
+  // "datawarning": {
+   // "doubtDomain": [],
+  // "doubtRange": []
+ // },
   "dialogs": {
    "dialog": {
     "find": {
