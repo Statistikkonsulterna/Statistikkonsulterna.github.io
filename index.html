@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-    <title>Transforma Prototyp</title>
+    <title>Transforma Län</title>
     <link href="libs_lan/vizabi.css" rel="stylesheet" type="text/css" >
     <link href="libs_lan/bubblechart.css" rel="stylesheet" type="text/css">
     <link href="libs_lan/bubblemap.css" rel="stylesheet" type="text/css">
@@ -20,65 +20,13 @@
     <script src="libs_lan/vizabi-ddfcsv-reader.js"></script>
     <script src="libs_lan/vizabi-csv-reader.js"></script>
     <script src="libs_lan/vizabi-excel-reader.js"></script>
-
-    <!-- 
-    <link href="libs_country/vizabi.css" rel="stylesheet" type="text/css" >
-    <link href="libs_country/bubblechart.css" rel="stylesheet" type="text/css">
-    <link href="libs_country/bubblemap.css" rel="stylesheet" type="text/css">
-    <link href="libs_country/mountainchart.css" rel="stylesheet" type="text/css">
-    <link href="libs_country/barrankchart.css" rel="stylesheet" type="text/css">
-    <link href="libs_country/linechart.css" rel="stylesheet" type="text/css">
-
-    <script src="libs_country/d3.js"></script>
-    <script src="libs_country/vizabi.js"></script>
-    <script src="libs_country/bubblechart.js"></script>
-    <script src="libs_country/bubblemap.js"></script>
-    <script src="libs_country/mountainchart.js"></script>
-    <script src="libs_country/barrankchart.js"></script>
-    <script src="libs_country/linechart.js"></script>
-    <script src="libs_country/vizabi-ddfcsv-reader.js"></script>
-    <script src="libs_country/vizabi-csv-reader.js"></script>
-    <script src="libs_country/vizabi-excel-reader.js"></script>
-
-    <link href="libs_bransch/vizabi.css" rel="stylesheet" type="text/css" >
-    <link href="libs_bransch/bubblechart.css" rel="stylesheet" type="text/css">
-    <link href="libs_bransch/bubblemap.css" rel="stylesheet" type="text/css">
-    <link href="libs_bransch/mountainchart.css" rel="stylesheet" type="text/css">
-    <link href="libs_bransch/barrankchart.css" rel="stylesheet" type="text/css">
-    <link href="libs_bransch/linechart.css" rel="stylesheet" type="text/css">
-
-    <script src="libs_bransch/d3.js"></script>
-    <script src="libs_bransch/vizabi.js"></script>
-    <script src="libs_bransch/bubblechart.js"></script>
-    <script src="libs_bransch/bubblemap.js"></script>
-    <script src="libs_bransch/mountainchart.js"></script>
-    <script src="libs_bransch/barrankchart.js"></script>
-    <script src="libs_bransch/linechart.js"></script>
-    <script src="libs_bransch/vizabi-ddfcsv-reader.js"></script>
-    <script src="libs_bransch/vizabi-csv-reader.js"></script>
-    <script src="libs_bransch/vizabi-excel-reader.js"></script> -->
   </head>
 
-<div class="tab">
-  <button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen">Län</button>
-  <button class="tablinks" onclick="openCity(event, 'Paris')">Bransch</button>
-  <button class="tablinks" onclick="openCity(event, 'Tokyo')">Länder</button>
-</div>
-
-<!-- Tab content -->
-<div id="London" class="tabcontent">
-  <h3>Sverige Län</h3>
-  <p>This graph includes data for all swedish regions.</p>
-
- <body style="width: 100%; max-width: 900px; height: 100%; margin: 0 auto; font-family: 'Segoe UI black';">
+  <body style="width: 70%; max-width: 900px; height: 100%; margin: 0 auto; font-family: 'Segoe UI black';">
 	<h1>Sverige Län</h1>
-	<!-- <p>You just exported this file from Gapminder Offline. Congratulations!</p>
-	<p>If you don't see the chart below, you probably did not open the file from a webserver. Out of safety concerns, web browsers don't allow us to read the data straight from your hard drive. Run a webserver locally or upload the files to a webserver online to view them.</p>
-    <p>If you have any comments, praise, bugs or ideas that you would like to share, please let us know on <a href="http://getsatisfaction.com/gapminder/">Get Satisfaction</a>. We love feedback!</p> -->
 	<div id="placeholder" style="width: 100%; height: 600px;"></div>
 
     <script src="config_lan.js"></script>
-   	<script src="added_javas.js"></script>
     <script>
 
       var ddfcsvReader = new DDFCsvReader.getDDFCsvReaderObject();
@@ -89,62 +37,5 @@
       var viz = Vizabi('BubbleChart', document.getElementById('placeholder'), CONFIG);
 
     </script>
-  </body>	
-</div>
-
- 
-
-<div id="Paris" class="tabcontent">
-  <h3>Bransch</h3>
-  <p>This graph includes data for swedish work sectors.</p>
-
-  <body style="width: 100%; max-width: 900px; height: 100%; margin: 0 auto; font-family: 'Segoe UI black';">
-    <h1>Antal företag per bransch</h1>
-    <!-- <p>You just exported this file from Gapminder Offline. Congratulations!</p>
-    <p>If you don't see the chart below, you probably did not open the file from a webserver. Out of safety concerns, web browsers don't allow us to read the data straight from your hard drive. Run a webserver locally or upload the files to a webserver online to view them.</p>
-      <p>If you have any comments, praise, bugs or ideas that you would like to share, please let us know on <a href="http://getsatisfaction.com/gapminder/">Get Satisfaction</a>. We love feedback!</p> -->
-    <div id="placeholder_2" style="width: 100%; height: 600px;"></div>
-  
-    <script src="config_bransch.js"></script>
-    <script src="added_javas.js"></script>
-      <script>
-  
-        var ddfcsvReader = new DDFCsvReader.getDDFCsvReaderObject();
-        Vizabi.Reader.extend("ddf", ddfcsvReader);
-        Vizabi.Reader.extend("ext-csv", CsvReader.csvReaderObject);
-        Vizabi.Reader.extend("excel", ExcelReader.excelReaderObject);
-  
-        var viz = Vizabi('BubbleChart', document.getElementById('placeholder_2'), CONFIG);
-  
-      </script>
-    </body>
-</div>
-
-<div id="Tokyo" class="tabcontent">
-  <h3>Länder</h3>
-  <p>This graph includes data for available countries and territories.</p>
-
-  <body style="width: 100%; max-width: 900px; height: 100%; margin: 0 auto; font-family: 'Segoe UI black';">
-    <h1>Länder och territorier</h1>
-    <!-- <p>You just exported this file from Gapminder Offline. Congratulations!</p>
-    <p>If you don't see the chart below, you probably did not open the file from a webserver. Out of safety concerns, web browsers don't allow us to read the data straight from your hard drive. Run a webserver locally or upload the files to a webserver online to view them.</p>
-      <p>If you have any comments, praise, bugs or ideas that you would like to share, please let us know on <a href="http://getsatisfaction.com/gapminder/">Get Satisfaction</a>. We love feedback!</p> -->
-    <div id="placeholder_3" style="width: 100%; height: 600px;"></div>
-  
-      <script src="config_country.js"></script>
-	<script src="added_javas.js"></script>
-      <script>
-  
-        var ddfcsvReader = new DDFCsvReader.getDDFCsvReaderObject();
-        Vizabi.Reader.extend("ddf", ddfcsvReader);
-        Vizabi.Reader.extend("ext-csv", CsvReader.csvReaderObject);
-        Vizabi.Reader.extend("excel", ExcelReader.excelReaderObject);
-  
-        var viz = Vizabi('BubbleChart', document.getElementById('placeholder_3'), CONFIG);
-  
-      </script>
-    </body>
-</div>		
-
-
+  </body>
 </html>

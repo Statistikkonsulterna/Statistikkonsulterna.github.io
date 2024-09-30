@@ -5,11 +5,11 @@ var CONFIG = {
   "lastModified": 1727076482915,
   "nameColumnPosition": 0,
   "noCache": true,
-  "path": "./data/Sverige_Län.xlsx",
+  "path": "./data_lan/Sverige_Län.xlsx",
   "reader": "excel",
   "sheet": "Ark1",
   "timeInColumns": true,
-  "ddfPath": "./data/Sverige_Län.xlsx"
+  "ddfPath": "./data_lan/Sverige_Län.xlsx"
  },
  "locale": {
   "filePath": "assets/translation/",
